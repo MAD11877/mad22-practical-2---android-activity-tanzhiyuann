@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     user user = new user("zhi yuan", "year 1", 1, false);
@@ -39,10 +40,13 @@ public class MainActivity extends AppCompatActivity {
         if (user.followed){
             follow.setText("Unfollow");
             user.followed = false;
+            Toast.makeText(getApplicationContext(), "Followed", Toast.LENGTH_SHORT).show();
+
         }
         else{
             follow.setText("Follow");
             user.followed = true;
+            Toast.makeText(getApplicationContext(), "Unfollowed", Toast.LENGTH_SHORT).show();
         }
     }
 
