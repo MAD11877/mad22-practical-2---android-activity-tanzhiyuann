@@ -9,7 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    user user = new user("Zhi Yuan", "year 1", 1, false);
+    user user = new user("zhi yuan", "year 1", 1, false);
 
 
     @Override
